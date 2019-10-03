@@ -1,0 +1,267 @@
+<div id="container">
+    <input type="hidden" id="IsClientTicket" value="1" />
+</div>
+<header class="clearfix">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="header-top-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-sm-10 col-xs-9">
+                        <span style="padding: 0px 5px; background: #fff;border-radius: 12px;">
+                            <i class="fa fa-phone" style="margin-right: 0; color: #0a9f4b;"> </i>
+                        </span>
+                        <span>
+                            <a href="tel:+1-855-334-3863" style="color:#fff">
+                                Call Toll free: 1-855-334-3869
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#" id="chatup" style="color:#fff;">
+                                <span style="padding: 0px 5px; background: #fff;border-radius: 12px;">
+                                    <i class="fa fa-comments" style="margin-right: 0; color: #0a9f4b;"> </i>
+                                </span> Chat with Us
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-3 right-align lea">
+                        <span class="textaw" id="textaw">Checkout</span>
+                        <div class="" style="display:inline-block;">
+                            <span class="textawimg ">
+                                <a href="cartlist/PickUpByGlobalGreen">
+                                    <i class="fa" style="position: relative;left: 28px;color: #ffffff;top: -9px;  z-index: 2;border-radius: 50%;font-weight: 900;border: 2px solid red; width: 20px; background: #f70404;height: 20px;">
+                                        <p style="font-size: 18px;font-family: 'Droid Serif',serif;color: #fff; font-weight: 400;text-align: center;line-height:0px !important;margin: 8px 1px 0px 2px;">                                        
+                                            <i class="fa fa-plus" aria-hidden="true" style="color: #fff ! important; font-size: 12px ! important;  line-height: 0 ! important;margin-right: 0px !important "></i>
+                                        </p>
+                                    </i>                                    
+                                    <img src="~/images/flag/cont-icon.png" style="width: 33px; height: 27px;right: 0; position: absolute; top: 10px;background: #fff; border-radius: 33px;">
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>                    
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Home/main"><img alt="Logo" class="img-responsive" src="/images/logo.png"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                        <li class="drop">
+                            <a href="public/main">Home</a>
+                        </li>
+                        <li class="drop">
+                            <a href="public/about-us">About Us</a>
+                        </li>
+                        <li class="drop ddarow">
+                            <a href="public/services">Services</a>
+                            <ul class="drop-down row before-right" style="width: 1136px;left: -624px; display: block!important; padding-top:0;">
+                                <li>
+                                    <div class="before">
+                                        <div class="col-md-12 service_menu_header service-header-dropdown-style">
+                                            <div class="col-sm-3 text-center line-heifgt2-5">RENTAL</div>
+                                            <div class="col-sm-9 text-center border-left line-heifgt2-5 cursor-pointer" onclick="GoToPage('/Services/freezeitems')">FREEZE YOUR ITEM PRICE TODAY</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="col-sm-3">
+                                                <a style="margin: 10px 0 0 0;padding: 0;border: none;cursor:pointer" onclick="EquipmentServicesRedirection(3)">
+                                                    <ul class="main-ul-1">
+                                                        <li class="head-home-1">EQUIPMENT SERVICES</li>
+                                                        <li class="img-li"><img class="img-main-menu" src="~/images/Services/equipment-services-logo.png"></li>
+                                                    </ul>
+                                                </a>
+                                                <a style="margin: 0;padding: 0;border: none;cursor:pointer" onclick="ServiceAvailability(12)">
+                                                    <ul class="main-ul-1">
+                                                        <li class="head-home-1">TIRE DISPOSAL SERVICES</li>
+                                                        <li class="img-li"><img class="img-main-menu" src="~/images/Services/tire-disposal.png"></li>
+                                                    </ul>
+                                                </a>
+                                                <a style="margin: 0;padding: 0;border: none;cursor:pointer" onclick="ContainerPickUpByGlobal(2,3,'','','','')">
+                                                    <ul class="main-ul-1">
+                                                        <li class="head-home-1">CONTAINER SERVICES</li>
+                                                        <li class="img-li"><img class="img-main-menu" src="~/images/Services/container-logo.png"></li>
+                                                    </ul>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-3 border-left">
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">METAL RECYCLING</li>
+                                                    <li><a href="public/Services/1"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>
+                                                </ul>
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">GUN RANGE RECYCLING</li>
+                                                    <li><a href="public/Services/6"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>
+                                                </ul>
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">PRECIOUS METALS RECYCLING</li>                                                    
+                                                    <li><a href="public/Services/9"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>
+                                                </ul>
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">WOOD CHIP RECYCLING</li>
+                                                    <li><a href="public/Services/13"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>                                                        
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">CPU CHIP RECYCLING</li>                                                    
+                                                    <li><a href="public/Services/4"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>                                                        
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>
+                                                </ul>
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">OIL FILTER RECYCLING</li>                                                    
+                                                    <li><a href="public/Services/7"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>                                                        
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>
+                                                </ul>
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">BATTERIES RECYCLING</li>
+                                                    <li><a href="public/Services/10"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>                                                        
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>
+                                                </ul>
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">INNTERTUBE RECYCLING</li>
+                                                    <li><a href="public/Services/14"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>                                                        
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">ELECTRONIC SCRAP RECYCLING</li>
+                                                    <li><a href="public/Services/5"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>                                                        
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>                                                
+                                                </ul>
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">CARDBOARD BOX RECYCLING</li>
+                                                    <li><a href="public/Services/8"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>                                                        
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>
+                                                </ul>
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">PLASTIC RECYCLING</li>
+                                                    <li><a href="public/Services/11"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>                                                        
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>
+                                                </ul>
+                                                <ul class="main-ul-1">
+                                                    <li class="head-home-1">WOOD PALLET RECYCLING</li>
+                                                    <li><a href="public/Services/15"><i class="fa fa-caret-right style-caret"></i> Sell to us</a></li>                                                        
+                                                    <li><a href="public/PickUpByUs"><i class="fa fa-caret-right style-caret"></i>Buy from us</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="drop">
+                            <a href="public/RecyclerVoice">Recycler Voice</a>
+                        </li>
+                        <li class="drop">
+                            <a href="public/Career">Careers</a>
+                        </li>
+                        <li class="drop">
+                            <a href="public/Contact">Contact</a>
+                        </li>
+                        <li class="drop">
+                            <a href="public/MyAccount">My Account</a>
+                        </li>                        
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<router-outlet></router-outlet>
+<!-- banner-text1-section
+================================================== -->
+<div class="section-content banner-text1-section">
+    <div class="container">
+        <h1>
+            We are always happy to hear from you
+            <a href="javascript:void(0)" onclick="openContactUsPopUp()">Get in touch</a>
+        </h1>
+    </div>
+</div>
+<!-- footer
+================================================== -->
+<footer>
+    <div class="up-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="widget footer-widget text-widget">
+                        <h2>About Global Green</h2>
+                        <p>
+                            Global Green United 3801 Inc. is a full service scrap metal recycler and processor for ferrous
+                            and non-ferrous metals and provide other services as well like tire disposal,
+                            Container and Equipment Services. Let's connect on social media for special coupons and offers…
+                            <span>
+                                <a href="/Home/About" class="icon_green">more</a>
+                            </span>
+                        </p>
+                        <ul class="social-list">
+                            <li><a class="facebook" href="javascript:void(0)" style="background: #2958c6; "><i class="fa fa-facebook" style="color:#fff"></i></a></li>
+                            <li><a class="twitter" href="javascript:void(0)" style="background: #00aced;"><i class="fa fa-twitter" style="color:#fff"></i></a></li>
+                            <li><a class="rss" href="javascript:void(0)" style="background: #d95b29;"><i class="fa fa-rss" style="color:#fff"></i></a></li>
+                            <li><a class="google" href="javascript:void(0)" style="background: #d34836;"><i class="fa fa-google-plus" style="color:#fff"></i></a></li>                            
+                            <li><a class="linkedin" href="javascript:void(0)" style="background: #007bb6;"><i class="fa fa-linkedin" style="color:#fff"></i></a></li>
+                            <li><a class="pinterest" href="javascript:void(0)" style="background: #db2218;"><i class="fa fa-pinterest" style="color:#fff"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="widget footer-widget recent-widget">
+                        <h2><a href="public/News" style="color:#fff">Recent News Posts</a></h2>
+                        <div id="RecentPosts" style="color:#ffffff">
+                            Loading...
+                            <!-- Get from database $("#RecentPosts").load("/Home/RecentPosts"); -->
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="widget footer-widget more-links-widget">
+                        <h2>More links</h2>
+                        <ul>
+                            <li><a href="public/TireDisposalServices">Tire Disposal Service</a></li>
+                            <li><a href="public/ContainerServices">Container Services</a></li>
+                            <li><a href="public/EquipmentServices">Equipment Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-line">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-3 col-sm-4">
+                    <p style="color: #888888;">Global green united 3801 inc 2019  <span></span>. All Rights Reserved</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <ul class="footer-menu">
+                        <li><a href="public/PrivacyPolicy">Privacy Policy &nbsp;|</a></li>
+                        <li><a href="public/TermsofUse">Terms of Use &nbsp;|</a></li>                        
+                        <li><a href="public/TermsofService">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-4">
+                    <ul class="footer-menu">
+                        <li><a href="public/main">Home</a></li>
+                        <li><a href="public/about-us">About Us</a></li>
+                        <li><a href="public/services">Services</a></li>
+                        <li><a href="public/career">Careers</a></li>
+                        <li><a href="public/contact">Contact</a></li>
+                        <li><a href="public/MyAccount">My Account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer -->
