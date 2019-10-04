@@ -1,14 +1,3 @@
-
-/*.mbws{
-    width: 85.666667% !important;
-    text-align: left;
-    left: 32px !important;
-}*/
-/*.tireDeliverBox img{
-    width:inherit !important;
-}*/
-/*order details*/
-
 .btnsty {
     margin-top: 15px;
     width: 180px;
@@ -23,7 +12,7 @@
 }
 
 .orderPP1 {
-    /*padding: 0px 25px 5px;*/
+    
     padding: 0px 0px 0px 20px;
 }
 
@@ -199,12 +188,12 @@ span.asterisk {
     justify-content: center;
     align-items: center;
 }
-/*progress bar*/
+
 .bs-wizard {
     margin-top: 0px;
 }
 
-/*Form Wizard*/
+
 .bs-wizard {
     border-bottom: solid 1px #e0e0e0;
     padding: 0 0 10px 0;
@@ -301,9 +290,6 @@ span.asterisk {
         .bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot {
             pointer-events: none;
         }
-/*END Form Wizard*/
-
-/*start vartual box here*/
 
 .vartual-box {
     display: block;
@@ -317,7 +303,7 @@ span.asterisk {
     user-select: none;
 }
 
-    /* Hide the browser's default checkbox */
+    
     .vartual-box input {
         position: absolute;
         opacity: 0;
@@ -328,7 +314,7 @@ span.asterisk {
         z-index: 1;
     }
 
-/* Create a custom checkbox */
+
 .checkmark {
     position: absolute;
     top: 3px;
@@ -350,7 +336,7 @@ span.asterisk {
     border: 1px solid #c4c2c2;
 }
 
-/* On mouse-over, add a grey background color */
+
 .vartual-box:hover input ~ .checkmark {
     background-color: #ccc;
 }
@@ -358,13 +344,13 @@ span.asterisk {
 .vartual-box:hover input ~ .checkmark_radio {
     background-color: #63a85f;
 }
-/* When the checkbox is checked, add a blue background */
+
 .vartual-box input:checked ~ .checkmark, .vartual-box input:checked ~ .checkmark_radio {
     background-color: #5fa560;
     border-color: #5fa560;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
+
 .checkmark:after {
     content: "";
     position: absolute;
@@ -376,13 +362,13 @@ span.asterisk {
     position: absolute;
     display: none;
 }
-/* Show the checkmark when checked */
+
 .vartual-box input:checked ~ .checkmark:after, .vartual-box input:checked ~ .checkmark_radio:after {
     display: block;
 }
 
 
-/* Style the checkmark/indicator */
+
 .vartual-box .checkmark:after {
     left: 6px;
     top: 3px;
@@ -404,10 +390,7 @@ span.asterisk {
     background: white;
 }
 
-/*legend vertual box here*/
 
-
-/*table style*/
 .item-added-details {
     font-size: 14px;
 }
@@ -437,8 +420,7 @@ span.asterisk {
         width: 77px;
     }
 
-h4.check {
-    /* background: url(../img/icon-check.gif) no-repeat !important; */
+h4.check {    
     padding-left: 40px;
 }
 
@@ -480,30 +462,6 @@ h4.check {
     width: 252px;
     overflow: hidden;
 }
-/*::-webkit-input-placeholder {
-   color: red;
-}
-
-:-moz-placeholder { / Firefox 18- /
-   color: red;  
-}
-
-::-moz-placeholder {  / Firefox 19+ /
-   color: red;  
-}
-
-:-ms-input-placeholder {  
-   color: red;  
-}*/
-/*.carousel-control {
-   
-    color: #ec001e;
-   
-}
-.carousel-indicators .active {
-  
-    background-color:#ec001e;
-}*/
 .imageDiv {
     background-image: url(../img/flag/ico_metalService.jpg);
     /*background-repeat:no-repeat;*/
@@ -9431,7 +9389,7 @@ footer {
 }
 
 
-(max-width: 1366px) {
+@media(max-width: 1366px) {
     .awidthmd
 
 {
