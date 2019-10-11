@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import {Router} from '@angular/router';
+import {SlimLoadingBarService} from 'ng2-slim-loading-bar';
+import {NavigationCancel, Event, NavigationEnd, NavigationError, 
+  NavigationStart, Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +11,26 @@ import {Router} from '@angular/router';
 export class AppComponent {
   title = 'Global Green';
 
-  constructor(private router: Router) {}
+  constructor(private _loadingBar: SlimLoadingBarService, private _router: Router) {
+    this._router.events.subscribe((event: Event) => {
+      this.navigationInterceptor(event);
+    });
+  }
 
-   GoToMainPage()
-   {
-        this.router.navigate(['/public/main']);
-   }
-
-
+  private navigationInterceptor(event: Event): void {
+    if (event instanceof NavigationStart) {
+      this._loadingBar.start();
+    }
+    if (event instanceof NavigationEnd) {
+      this._loadingBar.complete();
+    }
+    if (event instanceof NavigationCancel) {
+      this._loadingBar.stop();
+    }
+    if (event instanceof NavigationError) {
+      this._loadingBar.stop();
+    }
+  }
 }
 
 

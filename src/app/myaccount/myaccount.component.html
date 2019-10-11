@@ -1,0 +1,293 @@
+<div class="section-content imageStyleAbout">
+    <div class=""><img src="/assets/img/banners/account.jpg"></div>
+</div>
+<div class="section-content one-line-section">
+    <div class="container triggerAnimation animated bounceIn" data-animate="bounceIn">
+        <h1>My Account</h1>
+    </div>
+</div>
+<section class="job-browse section jobsection">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6  col-sm-6 cd-user-modal">
+                <div class="my-account-form">
+                    <ul class="nav nav-tabs cd-switcher" role="tablist" style="list-style: none;margin-bottom: 0px;">
+                        <li role="presentation" style="width: 100%;">
+                            <a style="background: #69ab65;">
+                                <p style="line-height: 1;  margin:0px;color: #28282a;font-size: 18px;">LOGIN</p>
+                                <p style="line-height: 1;  margin:6px;color: #28282a; font-family: sans-serif;font-size: 11px;">( RETURNING CUSTOMER ) </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content tabconborder">
+                        <div role="tabpanel" class="tab-pane active" id="LOGIN">
+                            <div class="page-login-form">
+                                <form role="form" class="login-form">
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <i class="ti-user"></i>
+                                            <input type="text" class="form-control formcontrolaccount" name="email" id="Email" onkeyup="checkloginEmail()" maxlength="70" placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <div class="form-group is-empty RegAsCustomer">
+                                        <div class="input-icon">
+                                            <div class="input-icon input-group" style="display: inline-table;">
+                                                <input type="password" class="form-control formcontrolaccount js-password" onkeypress="return searchKeyPress(event);" onkeyup="checkPassword()" id="Password" onpaste="return false" placeholder="Password">
+                                                <span class="input-group-btn icon-button">
+                                                    <button class="btn btn-default js-reveal" style="padding:9px;" type="button"><i class="fa fa-eye"></i></button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group is-empty" id="registeredMessage" style="display:none">
+                                        <span id="rMessage" style="color:red"></span>
+                                    </div>
+                                    <label id="lMessage" style="display:none">Or</label>
+                                    <div class="form-group is-empty" id="resendConfirmationLink" style="display:none">
+                                        <a onclick="resendConfirmationLink()" style="cursor:pointer;text-decoration:underline">Resend Confirmation Link</a>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <div class="form-group col-md-offset-4"><input id="btnlogin" name="btnlogin" type="button" onclick="return Login(this,'')" class="btn btn-signup btn-block btn-warning" value="Login" style="width: 55%;padding: 9px;font-size: 16px;"></div>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <div class="checkbox">
+                                            <label for="rememberme" class="rememberme">
+                                                <input name="rememberme" id="rememberme" value="forever" type="checkbox"><span class="checkbox-material"><span class="check"></span></span><span class="checkbox-material"><span class="check"></span></span> Remember Me
+                                            </label>
+                                            <span class="cd-form-bottom-message pull-right" href="javascript:void(0)">
+                                                <a routerLink="forgotpassword">Lost your password and Security information? </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-6  col-sm-6 cd-user-modal">
+                <div class="my-account-form">
+                    <ul class="nav nav-tabs cd-switcher" role="tablist" style="list-style: none;margin-bottom: 0px;">
+                        <li role="presentation" style="width: 100%;">
+                            <a style="background: #69ab65;">
+                                <p style="line-height: 1;font-size: 18px; margin:0px;color: #28282a;"> REGISTER</p>
+                                <p style="line-height: 1;margin:6px;color: #28282a;font-family: sans-serif; font-size: 11px;"> ( NEW CUSTOMER ) </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content tabconborder">
+                        <div role="tabpanel" class="tab-pane active" id="REGITER">
+                            <div class="page-login-form register" style="">
+                                <form role="form" class="login-form">
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <i class="ti-email"></i>
+                                            <input type="text" class="form-control formcontrolaccount" id="EmailId" onkeyup="checkEmail_Registration()" onblur="CheckEmailExist()" maxlength="40" name="email" placeholder="Email">
+                                            <span id="emailMessage" style="color:red"></span>
+                                            <span id="emailMessage1" style="color:green"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Register As : </label>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <label class="container">
+                                                    Individual
+                                                    <input type="radio" name="RegType" id="Individual" value="Individual">
+                                                    <span class="checkmark radio-checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label class="container">
+                                                    Organization
+                                                    <input type="radio" name="RegType" id="Organization" value="Organization">
+                                                    <span class="checkmark radio-checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="MainDetailsDiv" class="hide">
+                                        <div class="form-group js-OptionHover" id="ddlIndustryBase">
+                                            <div class="icon-addon addon-md">
+                                                <select class="selectpicker form-control js-SelectTooltip" id="ddlIndustryBase" name="ddlIndustryBase" onclick="OptionTitleHover()" onchange="ShowHideddlAndTxt()">
+                                                    <option selected value="">Select Account Type</option>
+                                                    <option selected value="1">ABC</option>
+                                                    <option selected value="2">DRF</option>
+                                                    <option selected value="3">XYZ</option>
+                                                </select>
+                                                <p id="" class="col-sm-6 .tooltipBox" style="z-index:9999;"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group js-OptionHover">
+                                            <div class="icon-addon addon-md">
+                                                <select class="selectpicker form-control js-SelectTooltip" id="ddlIndustryType" name="IndustryTypeId" onclick="OptionTitleHover()" onchange="checkddlIndustryType()">
+                                                    <option selected value="">Select Industry Type</option>
+                                                    <option selected value="1">ABC</option>
+                                                    <option selected value="2">DRF</option>
+                                                    <option selected value="3">XYZ</option>
+                                                </select>
+                                                <p id="" class="col-sm-12 .tooltipBox" style="z-index:9999;"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group is-empty" id="divCompanyName">
+                                            <div class="input-icon">
+                                                <i class="ti-email"></i>
+                                                <input type="text" class="form-control formcontrolaccount" id="CompanyName" maxlength="50" name="CompanyName" placeholder="Company Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group is-empty">
+                                            <div class="input-icon">
+                                                <i class="ti-email"></i>
+                                                <input type="text" class="form-control formcontrolaccount" id="LocationName" onkeyup="checkCompany()" maxlength="50" name="LocationName" placeholder="Location Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group is-empty RegAsCustomer">
+                                            <div class="input-icon">
+                                                <i class="ti-user"></i>
+                                                <input type="text" class="form-control formcontrolaccount" id="FirstName" name="FirstName" maxlength="40" placeholder="First Name" onkeyup="checkFirstName()">
+                                            </div>
+                                        </div>
+                                        <div class="form-group is-empty RegAsCustomer">
+                                            <div class="input-icon">
+                                                <i class="ti-user"></i>
+                                                <input type="text" class="form-control formcontrolaccount" id="LastName" maxlength="40" name="LastName" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group is-empty RegAsCustomer">
+                                            <div class="input-icon">
+                                                <i class="ti-user"></i>
+                                                <select class="selectpicker form-control js-SelectTooltip" id="ddlIndustryType" name="CellPhoneId" onclick="OptionTitleHover()" onchange="checkddlIndustryType()">
+                                                    <option selected value="">Select Cellphone Provider</option>
+                                                    <option selected value="1">ABC</option>
+                                                    <option selected value="2">DRF</option>
+                                                    <option selected value="3">XYZ</option>
+                                                </select>                                                
+                                            </div>
+                                        </div>
+                                        <div class="form-group is-empty RegAsCustomer">
+                                            <div class="input-icon">
+                                                <i class="ti-user"></i>
+                                                <select class="form-control" name="State" id="ddlState" style="border: 1px solid #bfbfbf;" onchange="AddressCheck()">
+                                                    <option value="">Select State/Province</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group is-empty RegAsCustomer" id="">
+                                            <div class="input-icon">
+                                                <i class="ti-email"></i>
+                                                <input type="text" class="form-control formcontrolaccount" id="City" onkeyup="" maxlength="15" name="City" placeholder="City" onblur="AddressCheck()">
+                                            </div>
+                                        </div>
+                                        <div class="form-group is-empty RegAsCustomer" id="">
+                                            <div class="input-icon">
+                                                <i class="ti-email"></i>
+                                                <input type="text" class="form-control formcontrolaccount" id="ZipCode" onkeyup="" maxlength="15" name="ZipCode" placeholder="ZipCode" onblur="AddressCheck()">
+                                            </div>
+                                        </div>
+                                        <div class="form-group is-empty RegAsCustomer" id="">
+                                            <div class="input-icon">
+                                                <i class="ti-email"></i>
+                                                <select class="selectpicker form-control js-SelectTooltip" id="ddlIndustryType" name="IndustryTypeId" onclick="OptionTitleHover()" onchange="checkddlIndustryType()">
+                                                    <option selected value="">Select Cellphone Provider</option>
+                                                    <option selected value="1">ABC</option>
+                                                    <option selected value="2">DRF</option>
+                                                    <option selected value="3">XYZ</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="input-group RegAsCustomer" id="divMobileNo">
+                                            <div class="input-phone js-OptionHover">
+
+                                                <select id="PhoneCode" class="form-control phonecode js-SelectTooltip">                                                    
+                                                        <option selected value="">Select Country</option>
+                                                        <option selected value="1">USA</option>
+                                                        <option selected value="2">India</option>
+                                                        <option selected value="3">China</option>                                                    
+                                                </select>
+                                                <p class="col-sm-6 tooltipBoxT" style="z-index:9999;width:0"></p>
+
+                                                <input type="text" class="form-control formcontrolaccount" id="Mobile" onkeyup="" maxlength="10" name="mobileNo" placeholder="Mobile No.">
+                                            </div>
+                                            <span class="input-group-btn input-group-label txtsendOTP">
+                                                Send OTP
+                                            </span>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-warning input_button otp_butons" type="button" id="btnSendOTP" title="Send OTP by SMS" onclick="ResendOTP()">
+                                                    <span class="fa fa-comments-o" aria-hidden="true">
+                                                    </span> SMS
+                                                </button>
+                                            </span>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-warning input_button otp_butons" type="button" id="btnSendOTPbyIVR" title="Send OTP by IVR" onclick="SendOTPbyIVR()">
+                                                    <span class="fa fa-phone-square" aria-hidden="true">
+                                                    </span> IVR
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="input-group hide" id="divOTP">
+                                            <input type="text" class="form-control formcontrolaccount" id="OTP" onkeyup="ValidateOTP()" maxlength="6" name="mobileNo" placeholder="Enter OTP">
+                                            <span class="input-group-btn" id="spanResendOTP">
+
+                                                <button class="btn btn-default input_button" type="button">
+                                                    <span class="fa fa-times" style="color:red;" id="OTPmessageVerified"> Expired</span>
+                                                </button>
+                                            </span>
+                                            <span class="input-group-btn" id="spanTimer">
+                                                <button class="btn btn-warning input_button" type="button">
+                                                    <span id="timer"></span>
+                                                </button>
+                                            </span>
+                                            <span class="input-group-btn" id="spanOTPVerified">
+                                                <button class="btn btn-default input_button" type="button">
+                                                    <span class="fa fa-check" style="color:green;" id="OTPmessageVerified"> Verified</span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <div class="form-group is-empty">
+                                            <span id="OTPmessage"></span>
+                                        </div>
+                                        <hr style="border-top: 1px solid #9dc99b;" />
+                                        <div class="form-group is-empty">
+                                            <div class="input-icon">
+                                            </div>
+                                        </div>
+                                        <div class="form-group is-empty">
+                                            <div class="input-icon input-group" style="display: inline-table;">
+                                                <input type="password" autocomplete="new-password" class="form-control formcontrolaccount js-password" id="FPassword" maxlength="40" placeholder="Password" onkeyup="emptyPass1()">
+                                                <span class="input-group-btn icon-button">
+                                                    <button class="btn btn-default js-reveal" style="padding:9px;" type="button"><i class="fa fa-eye"></i></button>
+                                                </span>
+
+                                            </div>
+                                            <span name="password-validation" id="password-validation" class="hide text-danger border-0 block"></span>
+                                        </div>
+
+                                        <div class="form-group is-empty RegAsCustomer">
+                                            <div class="input-icon">
+                                                <div class="input-icon input-group" style="display: inline-table;">
+                                                    <input type="password" class="form-control formcontrolaccount js-password" id="CPassword" maxlength="40" placeholder="Repeat Password" onkeyup="checkPass1()">
+                                                    <span class="input-group-btn icon-button">
+                                                        <button class="btn btn-default js-reveal" style="padding:9px;" type="button"><i class="fa fa-eye"></i></button>
+                                                    </span>
+                                                </div>
+                                                <span id="PasswordVerify" style="color:red"></span>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div id="registerError">
+                                            <span id="errorMessage"></span>
+                                        </div> 
+                                       <div class="form-group col-md-offset-4"><input id="btnRegister" name="login" type="button" onclick="return Registration()" class="btn btn-signup btn-block btn-warning" value="Register" style="width: 55%;padding: 9px;font-size: 16px;"></div>
+                                    </div>
+                                </form>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

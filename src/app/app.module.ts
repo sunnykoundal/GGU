@@ -9,6 +9,12 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { AdminLayoutComponent } from './_Layout/admin-layout/admin-layout.component';
 import { DashboardComponent } from './Admin/dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
+import { ServicesComponent } from './services/services.component';
+import { RecyclervoiceComponent } from './recyclervoice/recyclervoice.component';
+import { ContactComponent } from './contact/contact.component';
+import { CareerComponent } from './career/career.component';
+import { MyaccountComponent } from './myaccount/myaccount.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +24,17 @@ import { HomeComponent } from './home/home.component';
     AboutUsComponent,
     AdminLayoutComponent,
     DashboardComponent,
-    HomeComponent    
+    HomeComponent,
+    ServicesComponent,
+    RecyclervoiceComponent,
+    ContactComponent,
+    CareerComponent,
+    MyaccountComponent    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlimLoadingBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

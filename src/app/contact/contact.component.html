@@ -1,0 +1,82 @@
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<div class="section-content map-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d988.5064190445562!2d-97.350411!3d32.8123387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7681f5c6aaab%3A0xaf48dcec678efe5c!2sglobalgreenunited!5e1!3m2!1sen!2sin!4v1540807940336" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="section-content one-line-section">
+    <div class="container triggerAnimation animated bounceIn" data-animate="bounceIn">
+        <h1>Contact Us</h1>
+    </div>
+</div>
+<div id="content">
+    <div class="section-content contact-section contact-main">
+        <div class="container">
+            <div class="row row-style contact_block">
+                <div class="col-md-6 col-sm-12 responsive-div-view">
+                    <form id="contact-form" class="contact-info">
+                        <h2>Send us a message</h2>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <select class="form-control" name="ddlDepartmentid" id="ddlDepartmentid" style="border: 1px solid #bfbfbf;">
+                                    <option value="">Select Department </option>
+                                </select>
+                            </div>
+                            <div class="col-md-12">
+                                <input name="name" id="name" type="text" onkeyup="checkName()" placeholder="Name">
+                            </div>
+
+                            <div class="col-md-12">
+                                <input name="mail" id="mail" type="text" onkeyup="checkEmail()" placeholder="Email">
+                                <div id="msg" class="" style="color:#fc5656;position:absolute;bottom:8px;"></div>
+                            </div>
+                            <div class="col-md-12">
+                                <input name="subject" id="subject" type="text" onkeyup="validate()" maxlength="30" placeholder="Subject">
+                            </div>
+                        </div>
+                        <textarea name="comment" id="comment" onkeyup="validate()" placeholder="Message"></textarea>
+                        <div class="submit-area">
+                            <input type="submit" onclick="return Send()" id="submit_contact" value="Send Message" disabled>
+                            <div id="msg" class="message"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 col-sm-12 col-md-offset-1 pull-right contact-socail">
+                    <div class="contact-information">
+                        <h2>Contact Info</h2>
+                        <ul class="information-list">
+                            <li><a href="https://goo.gl/maps/ApQvF8eD6sB2" style="margin:0px;display:block;"><i class="fa fa-map-marker"></i><span>Global Green United Inc 3801  North . Commerce Street Fort Worth, TX 76106</span></a></li>
+                            <li><a href="skype:1-855-334-3869" style="margin:0px;display:block;"><i class="fa fa-phone"></i></a><span><a href="skype:1-855-334-3869">Toll free: 1-855-334-3869</a></span></li>
+                            <li><a href="skype:817-625-8900" style="margin:0px;display:block;"><i class="fa fa-phone" style="cursor:pointer;"></i> </a> <span><a href="skype:817-625-8900">Office: 817-625-8900</a></span></li>
+
+                        </ul>
+                        <ul class="social-list">
+                            <li><a class="facebook" href="javascript:void(0)" style="background: #2958c6;"><i class="fa fa-facebook" style="color:#fff"></i></a></li>
+                            <li><a class="twitter" href="javascript:void(0)" style="background: #00aced;"><i class="fa fa-twitter" style="color:#fff"></i></a></li>
+                            <li><a class="rss" href="javascript:void(0)" style="background: #d95b29;"><i class="fa fa-rss" style="color:#fff"></i></a></li>
+                            <li><a class="google" href="javascript:void(0)" style="background: #d34836;"><i class="fa fa-google-plus" style="color:#fff"></i></a></li>
+                            <li><a class="linkedin" href="javascript:void(0)" style="background: #007bb6;"><i class="fa fa-linkedin" style="color:#fff"></i></a></li>
+                            <li><a class="pinterest" href="javascript:void(0)" style="background: #db2218;"><i class="fa fa-pinterest" style="color:#fff"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12  contact-time margin-left-15">
+                    <div class="contact-information contactfont">
+
+                        <div class="position-relative">
+                            <div id="PageContent_1">
+                                <div id="Section_2" class="section-link"></div>
+                                @Html.Partial("_pageContentTextEditButtons", Model)
+                                <div id="PageContent_Description">
+                                    @Html.Raw(Model.Description)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-open-on-time-table">
+                            @Html.Partial("_pageContentTextOnTimeTable", Model.OpenOnTimeTable)
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+</div>

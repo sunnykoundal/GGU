@@ -1,0 +1,58 @@
+﻿.css-modalEnqueryDialog.modal-dialog.modal-lg {
+    max-width: 100% !important;
+    width:50%;
+}
+.css-maintainanceModalHeader.modal-header {
+    display: block;
+    background: rgba(105, 171, 102, 0.7294117647058823);
+    color: white;
+}
+.css-modalEnqueryInputBox {
+    border-radius: 0px !important;
+    border-color: lightgrey !important;
+    height: 45px !important;
+    margin:22px 0;
+}
+
+.css-maintainTextAreaMessage.css-modalEnqueryInputBox {
+    height: 200px !important;
+}
+.css-maintainButton {
+    border-radius: 0px !important;
+    height: 45px !important;
+}
+#msg{
+    color:red;
+}
+html input[disabled] {
+    cursor: not-allowed !important;
+}
+#UnderMaintRefreshIcon {
+    color: rgba(105, 171, 102, 0.7294117647058823);
+}
+.col-md-12.css-maintainanceLoginCaptchaParentDiv {
+    height: 35px;
+    margin-bottom:28px;
+}
+
+.col-md-6.css-maintainanceDivCaptchaN2.divCaptchMargin-bottom-30 {
+    background: whitesmoke;
+    margin-left: 20px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+.css-maintainCaptechIconN2.fa.fa-3x.fa-refresh.icon_green{
+    color:whitesmoke;
+}
+.cs-maintananceInputCaptchaLogin {
+    border-radius: 0px;
+   width: 215px;
+    margin-left: 20px;
+}
+.css-maintainanceLoginImageCaptcha.g-recaptcha {
+    margin: 5px 0 15px 64px;
+}
+.css-maintainPasswordInput.formcontrolaccount.js-password{
+    border:1px solid !important;
+    border-color:lightgrey !important;
+}

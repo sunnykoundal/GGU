@@ -1,0 +1,207 @@
+﻿.sh-image-gallery > .slick-prev, .sh-image-gallery > .slick-next {
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    background: #67a867;
+    border: none;
+    transform: rotate(180deg);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: -15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #ccc;
+    color: #fff;
+    font-size: 14px;
+    outline: none !important;
+}
+
+.sh-image-gallery > .slick-next {
+    transform: rotate(0deg) !important;
+    left: initial !important;
+    right: -15px !important;
+}
+
+    .sh-image-gallery > .slick-prev:before, .sh-image-gallery > .slick-next:before {
+        content: "\f061";
+    }
+
+.sh-image-gallery > ul {
+    list-style: none;
+    padding-left: 0;
+    display: table;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+    .sh-image-gallery > ul > li {
+        display: inline-block;
+        margin: 0 4px;
+        line-height: 0;
+    }
+
+        .sh-image-gallery > ul > li > button {
+            background: #c5c5d0;
+            border: none;
+            color: rgba(0, 0, 0, 0);
+            border-radius: 50%;
+            width: 13px;
+            height: 13px;
+            box-shadow: 0px 0px 6px 0px #b5afaf;
+            outline: none
+        }
+
+    .sh-image-gallery > ul > .slick-active > button {
+        transform: scale(1.4);
+        background: #67a867 !important;
+    }
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+    .slick-list:focus {
+        outline: none
+    }
+
+    .slick-list.dragging {
+        cursor: pointer;
+        cursor: hand
+    }
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+    .slick-track:before, .slick-track:after {
+        display: table;
+        content: ''
+    }
+
+    .slick-track:after {
+        clear: both
+    }
+
+.slick-loading .slick-track {
+    visibility: hidden
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px
+}
+
+[dir='rtl'] .slick-slide {
+    float: right
+}
+
+.slick-slide img {
+    display: block
+}
+
+.slick-slide.slick-loading img {
+    display: none
+}
+
+.slick-slide.dragging img {
+    pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+    display: block
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent
+}
+
+.slick-arrow.slick-hidden {
+    display: none
+}
+
+
+
+.summary:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.woocommerce div.product .woocommerce-product-gallery__wrapper img {
+    margin-bottom: 0
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__image {
+    padding: 7.5px
+}
+
+.woocommerce .product .woo-short-description {
+    margin-bottom: 30px
+}
+
+.woocommerce .woocomerce-styling .product .product_title {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb
+}
+
+.woocommerce div.product .price {
+    line-height: 30px;
+    margin-bottom: 0;
+    min-height: 32px
+}
+
+.woocommerce div.product .woocommerce-product-rating {
+    line-height: 34px
+}
+
+.woocommerce .product .woo-seperator-line {
+    margin-top: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #ebebeb
+}
